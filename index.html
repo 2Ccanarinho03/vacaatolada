@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Fluxograma do Jogo de Mistério</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Resolva um crime!</h1>
+        <div class="fluxo">
+            <div class="passo ativo" id="passo-0">
+                <p>Início: Você descobre um mistério a ser resolvido.</p>
+                <button class="btn-proximo" data-proximo="1">Investigar a Casa</button>
+                <button class="btn-proximo" data-proximo="2">Falar com a Testemunha</button>
+            </div>
+            <div class="passo" id="passo-1">
+                <p>Você chegou à casa onde o crime aconteceu.</p>
+                <button class="btn-proximo" data-proximo="3">Buscar pistas na sala</button>
+                <button class="btn-proximo" data-proximo="4">Desistir e sair da casa</button>
+            </div>
+            <div class="passo" id="passo-2">
+                <p>A testemunha parece nervosa. O que você faz?</p>
+                <button class="btn-proximo" data-proximo="5">Confrontar a testemunha</button>
+                <button class="btn-proximo" data-proximo="6">Perguntar sobre o que viu</button>
+            </div>
+            <div class="passo" id="passo-3">
+                <p>Você encontra uma pista importante na sala.</p>
+                <button class="btn-proximo" data-proximo="7">Seguir para a delegacia</button>
+            </div>
+            <div class="passo" id="passo-4">
+                <p>Você decide que não vale a pena e sai da casa.</p>
+            </div>
+            <div class="passo" id="passo-5">
+                <p>A testemunha se torna defensiva e não fala.</p>
+                <button class="btn-proximo" data-proximo="6">Perguntar sobre o que viu</button>
+            </div>
+            <div class="passo" id="passo-6">
+                <p>A testemunha revela uma pista útil.</p>
+                <button class="btn-proximo" data-proximo="7">Seguir para a delegacia</button>
+            </div>
+            <div class="passo" id="passo-7">
+                <p>Na delegacia, você pode interrogar o suspeito.</p>
+                <button class="btn-proximo" data-proximo="8">Interrogar o suspeito</button>
+                <button class="btn-proximo" data-proximo="9">Buscar mais evidências</button>
+            </div>
+            <div class="passo" id="passo-8">
+                <p>O suspeito nega tudo. Você precisa de mais provas.</p>
+                <button class="btn-proximo" data-proximo="9">Buscar mais evidências</button>
+            </div>
+            <div class="passo" id="passo-9">
+                <p>Você encontra provas que levam à solução do mistério!</p>
+                <button class="btn-proximo" data-proximo="10">Resolver o mistério</button>
+            </div>
+            <div class="passo" id="passo-10">
+                <p>Você apresenta as evidências e resolve o mistério!</p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
